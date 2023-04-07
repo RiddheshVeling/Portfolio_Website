@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bca8500463.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+</style>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Designer</p>
+            <h1>Hi, I'm <span>Riddhesh</span> Veling<br>from India</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/profile.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Myself Riddhesh Veling studying Electronics and Telecommunication engineering from St. Francis Institute of Technology. 
+                    I have completed 1(IEEE Winter Internship Program) internship and currently working at 1(CodeCluase Web Development Internship).
+                    I give abquick learner and give more efforts to self learning. I love finding solutions to complex problems.
+                </p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Competitive Coding</span><br>Participate in Coding Competitions</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>IEEE Winter Internship</span><br>Worked as Full Stack Developer</li>
+                        <li><span>Tutor</span><br>Take classes for students</li>
+                        <li><span>Hackathon</span><br>Participated in 24Hr Hackathon</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Till 2019</span><br>SSC</li>
+                        <li><span>2019-2021</span><br>HSC</li>
+                        <li><span>2021-Present</span><br>Undergraduation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Designed some Web Applications such as 'Unit Converter' and 'Payment Gateway' as projects. The main language I used for these projects are HTML/CSS and Javascript. All these Web Applications are a part of CodeClause Web Developer Internship. You can check these out using the 'Learn more' button below</p>
+                <a href="https://github.com/RiddheshVeling/Payment_Integration.git">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Made some Ui/Ux deign projects as a base for web appliactions with the help of Figma application. Figma makes it much more easy to design a layout for youor webpage or mobile application and gives you a brief idea about how the finished product may look like. I learned Figma as a part of IEEE Winter Internship Program. You can check out Figma design I made using the 'Learn more' button below</p>
+                <a href="https://www.figma.com/file/XNlFvSjnJxgMXNyqjwVdbV/Pinterest_1?node-id=0%3A1&t=oZBdpYUPj6bxNuJs-1">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>Hardware Projects</h2>
+                <p>The hardware projects that I make are a part of my Electronics and Telecommunication Undergraduation Program. These projects enhance my troubleshooting skills and also help in building a sense of understanding between me and my team members. Till now I have completed 3 hardware projects. You can check out one of these projects using the 'Learn more' button below</p>
+                <a href="https://github.com/RiddheshVeling/Mobile_Phone_Detector.git">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact ME</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>Contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100015131893359"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/RiddheshVeling"><i class="fa-brands fa-square-twitter"></i></i></a>
+                    <a href="https://www.instagram.com/_riddhesh_veling_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/riddhesh-veling-4120a624b/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxd0zWodQiCcAhYG_7pZfbzSqfQZm9iBN-qzvZmdflDhCzuOZJsk9CF_7Jqe-jAG2axkA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
